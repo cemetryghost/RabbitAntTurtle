@@ -1,10 +1,13 @@
 class Animal extends Thread {
+    
     int priority;
     String name;
+    
     public Animal(String name,int priority) {
         this.name = name;
         this.priority = priority;
     }
+    
     public void run() {
         for(int i = 0; i <= 1000; i+=100){
             Animal.currentThread().setPriority(priority);
@@ -12,6 +15,7 @@ class Animal extends Thread {
         }
     }
 }
+
 public class Main {
     public static void main(String args[]){
         System.out.println("Lets go!");
