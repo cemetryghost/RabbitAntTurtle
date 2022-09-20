@@ -19,8 +19,8 @@ class Animal extends Thread {
 public class Main {
     public static void main(String args[]){
         System.out.println("Lets go!");
-        Animal rabbit = new Animal("Кролик", 5);
-        Animal turtle = new Animal("Черепаха", 5);
+        Animal rabbit = new Animal("Кролик", 1);
+        Animal turtle = new Animal("Черепаха", 10);
         rabbit.start();
         turtle.start();
     }
